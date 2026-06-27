@@ -359,6 +359,24 @@ export const DashboardPasien: React.FC<DashboardPasienProps> = ({ loggedInUser, 
   const [showFullCatalogModal, setShowFullCatalogModal] = useState(false);
   const carouselRef = useRef<HTMLDivElement>(null);
 
+  const openDetailModal = (product: any) => {
+    setSelectedProductForDetail(product);
+  };
+
+  const closeDetailModal = () => {
+    setSelectedProductForDetail(null);
+  };
+
+  const scrollCarousel = (direction: 'left' | 'right') => {
+    if (carouselRef.current) {
+      const scrollAmount = 300;
+      carouselRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const filteredProducts = herbalProducts.filter(p => 
     p.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
