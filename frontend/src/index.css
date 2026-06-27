@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-dark-neutral font-sans antialiased selection:bg-secondary-light selection:text-dark-neutral;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-primary font-bold tracking-tight;
+  }
+}
+
+/* Custom utility styles or animations */
+.glow-effect {
+  box-shadow: 0 0 20px rgba(161, 188, 152, 0.15);
+}
+
+/* Smooth transitions */
+.transition-all-custom {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
