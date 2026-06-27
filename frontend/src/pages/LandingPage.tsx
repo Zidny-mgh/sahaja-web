@@ -146,33 +146,33 @@ export const LandingPage: React.FC = () => {
   return (
     <div className="space-y-24 pb-20 relative">
       {/* Decorative Parallax Background Orbs */}
-      <motion.div 
+      <motion.div
         style={{ y: yBlob1 }}
         className="absolute top-48 left-10 w-72 h-72 rounded-full bg-[#384e31]/5 blur-3xl pointer-events-none -z-20"
       />
-      <motion.div 
+      <motion.div
         style={{ y: yBlob2 }}
         className="absolute top-[40%] -right-20 w-96 h-96 rounded-full bg-secondary/5 blur-3xl pointer-events-none -z-20"
       />
-      <motion.div 
+      <motion.div
         style={{ y: yBlob3 }}
         className="absolute top-[75%] left-5 w-80 h-80 rounded-full bg-[#384e31]/5 blur-3xl pointer-events-none -z-20"
       />
-      
+
       {/* 1. Hero Section */}
       <section id="hero" className="relative overflow-hidden pt-8 md:pt-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-          
+
           {/* Hero Content */}
           <div className="lg:col-span-7 space-y-6 text-left">
             <h1 className="text-6xl sm:text-7xl lg:text-[5.5rem] font-extrabold text-dark-neutral leading-none tracking-tight">
               Perawatan Syar'i yang Aman dan Modern, <span className="text-[#384e31] block mt-1">Langsung ke Rumah Anda.</span>
             </h1>
-            
+
             <p className="text-sm sm:text-base md:text-lg text-dark-neutral/70 leading-relaxed max-w-xl font-medium pt-2">
               Layanan totok punggung & bekam syar'i. Terapis sesuai gender, jadwal otomatis, dan herbal alami. Anda cukup istirahat, biar kami yang datang.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <button
                 type="button"
@@ -197,11 +197,11 @@ export const LandingPage: React.FC = () => {
             <div className="relative w-full max-w-md">
               {/* Outer soft background accent */}
               <div className="absolute -inset-4 bg-[#384e31]/5 rounded-[3rem] -z-10 blur-xl" />
-              
+
               {/* Image Frame */}
               <div className="relative aspect-[4/5] sm:aspect-square lg:aspect-[4/5] w-full rounded-[2.5rem] overflow-hidden shadow-2xl border border-accent/20">
-                <img 
-                  src={depanImg} 
+                <img
+                  src={depanImg}
                   alt="Terapi Relaksasi Totok Punggung Sahaja"
                   className="w-full h-full object-cover"
                 />
@@ -326,7 +326,7 @@ export const LandingPage: React.FC = () => {
                 <hr className="border-accent/20" />
 
                 <ul className="space-y-2.5">
-                  {service.features.map((feature, i) => (
+                  {service.features.map((feature: any, i: number) => (
                     <li key={i} className="flex items-center gap-2 text-xs text-dark-neutral/80">
                       <span className="p-0.5 bg-secondary-light/40 text-[#384e31] rounded-full">
                         <Check size={12} className="stroke-[3]" />
