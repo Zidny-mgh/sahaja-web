@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, Clock, MapPin, Video } from 'lucide-react';
+import { Phone, Mail, Clock, MapPin } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
             </p>
             <div className="flex items-center gap-3 pt-2">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/sahajatopung/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-xl bg-background/5 hover:bg-primary/20 text-background/80 hover:text-primary flex items-center justify-center transition-all duration-300 border border-background/10 hover:border-primary/30"
@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
                 </svg>
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61591144543437"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-xl bg-background/5 hover:bg-primary/20 text-background/80 hover:text-primary flex items-center justify-center transition-all duration-300 border border-background/10 hover:border-primary/30"
@@ -47,13 +47,15 @@ export const Footer: React.FC = () => {
                 </svg>
               </a>
               <a
-                href="https://tiktok.com"
+                href="https://www.tiktok.com/@sahajatopung"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-xl bg-background/5 hover:bg-primary/20 text-background/80 hover:text-primary flex items-center justify-center transition-all duration-300 border border-background/10 hover:border-primary/30"
                 aria-label="TikTok"
               >
-                <Video size={18} />
+                <svg className="w-4.5 h-4.5 fill-current" viewBox="0 0 24 24">
+                  <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.01 1.62 4.14.94 1.05 2.26 1.73 3.65 1.93v3.74c-1.39-.1-2.76-.64-3.86-1.52-.7-.57-1.25-1.31-1.63-2.14v7.92c-.08 2.06-.92 4.09-2.43 5.48-1.64 1.48-3.95 2.12-6.11 1.75-2.22-.38-4.22-1.84-5.18-3.9-1.04-2.23-.74-5 0.77-6.93 1.25-1.6 3.25-2.48 5.28-2.34v3.86c-1.12-.13-2.31.29-3.08 1.12-.8.88-.99 2.21-.51 3.29.47 1.07 1.6 1.79 2.76 1.84 1.26.06 2.51-.76 2.92-1.94.19-.53.25-1.1.24-1.66V0h.06z" />
+                </svg>
               </a>
             </div>
           </div>
@@ -103,15 +105,27 @@ export const Footer: React.FC = () => {
             <ul className="space-y-3.5 text-xs text-background/70">
               <li className="flex items-start gap-2.5 leading-relaxed">
                 <MapPin size={16} className="text-primary flex-shrink-0 mt-0.5" />
-                <span>Jl. Sahaja Raya No. 45, Kebayoran Baru, Jakarta Selatan, 12130</span>
+                <span>Jl. Rawagede Wetan No. 70B, RT. 006/RW.002, Jatimelati, Kota Bks, Jawa Barat 17415 Pondok Melati Kota Bekasi Jawa Barat 17415</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone size={16} className="text-primary flex-shrink-0" />
-                <span>+62 812-3456-789</span>
+                <a
+                  href="https://wa.me/6281298959362?text=Halo%20Admin,%20aku%20ingin%20bertanya%20soal%20sahaja"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  +62 812-9895-9362
+                </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail size={16} className="text-primary flex-shrink-0" />
-                <span>info@totokpunggung-sahaja.com</span>
+                <a
+                  href="mailto:totokpunggungsahaja@gmail.com"
+                  className="hover:text-primary transition-colors"
+                >
+                  totokpunggungsahaja@gmail.com
+                </a>
               </li>
             </ul>
           </div>

@@ -122,12 +122,12 @@ export const LandingPage: React.FC = () => {
       answer: "Ya, kami menjamin terapis pria untuk pasien pria, dan terapis wanita untuk pasien wanita demi kenyamanan dan kesesuaian adab syar'i."
     },
     {
-      question: "Apakah terapis sudah tersertifikasi resmi?",
-      answer: "Seluruh terapis Totok Punggung Sahaja telah memiliki sertifikasi resmi dari lembaga BNSP dan berpengalaman luas di bidang terapi stimulasi saraf."
+      question: "Apakah terapisnya sudah berpengalaman?",
+      answer: "Terapis kami sudah sangat berpengalaman di bidang totok punggung dengan minimal pengalaman 4 tahun praktik."
     },
     {
       question: "Bagaimana protokol kebersihan yang diterapkan?",
-      answer: "Terapis kami mematuhi protokol kesehatan ketat, selalu mencuci tangan sebelum & sesudah tindakan, memakai masker, serta memastikan seluruh peralatan bersih & steril."
+      answer: "Terapis kami mematuhi protokol kesehatan ketat, selalu mencuci tangan sebelum & sesudah tindakan, serta memastikan seluruh peralatan bersih & steril."
     },
     {
       question: "Apakah saya bisa menjadwalkan ulang (ubah jadwal) terapi?",
@@ -160,7 +160,7 @@ export const LandingPage: React.FC = () => {
       />
 
       {/* 1. Hero Section */}
-      <section id="hero" className="relative overflow-hidden pt-8 md:pt-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section id="hero" className="relative overflow-hidden pt-20 scroll-mt-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
 
           {/* Hero Content */}

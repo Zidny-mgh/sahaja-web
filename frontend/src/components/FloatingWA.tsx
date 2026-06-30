@@ -4,10 +4,10 @@ interface FloatingWAProps {
   phoneNumber?: string;
 }
 
-export const FloatingWA: React.FC<FloatingWAProps> = ({ phoneNumber = '628123456789' }) => {
+export const FloatingWA: React.FC<FloatingWAProps> = ({ phoneNumber = '6281298959362' }) => {
   return (
     <a
-      href={`https://wa.me/${phoneNumber}`}
+      href={`https://wa.me/${phoneNumber}?text=Halo%20Admin,%20aku%20ingin%20bertanya%20soal%20sahaja`}
       target="_blank"
       rel="noopener noreferrer"
       id="floating-wa-btn"

@@ -233,19 +233,8 @@ export const createBooking = async (req: AuthenticatedRequest, res: Response) =>
     const dateFormatted = parsedDate.toISOString().slice(0, 10).replace(/-/g, '');
     
     // Hitung jumlah booking hari ini untuk sequence generator
-    const countToday = await prisma.booking.count({
-      where: {
-        scheduledDate: {
-          gte: startOfDay,
-          lte: endOfDay,
-        },
-      },
-    });
-
-    const sequence = String(countToday + 1).padStart(4, '0');
-    const bookingCode = `TPS-${dateFormatted}-${sequence}`;
-
-    const totalAmount = Number(service.price) + productsTotal;
+    const randomSequence = Math.floor(1000 + Math.random() * 9000);
+    const bookingCode = `TPS-${dateFormatted}-${randomSequence}`;
 
     // 6. Buat Transaksi Booking baru
     const newBooking = await prisma.booking.create({
